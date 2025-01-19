@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: sans-serif;
+}
+.hero-bg{
+    background-image: url("./assets/images/hero-img.png");
+    background-repeat: no-repeat;
+    background-position: left;
+}
