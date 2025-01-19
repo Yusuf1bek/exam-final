@@ -63,11 +63,11 @@ const Baskets: React.FC = () => {
     cart.forEach((item) => {
       text += `Title: ${item.title}%0A`;
       text += `Counts: ${item.quantity}%0A`;
-      text += `Price: ${item.price} ₽%0A%0A`;
+      text += `Price: ${item.price} сум%0A%0A`;
     });
 
     const totalPrice = cart.reduce((total, item) => total + item.price * item.quantity, 0);
-    text += `<strong>Total price: ${totalPrice} ₽</strong>%0A`;
+    text += `<strong>Total price: ${totalPrice} сум</strong>%0A`;
 
     const url = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage?chat_id=${CHAT_ID}&text=${text}&parse_mode=html`;
 
